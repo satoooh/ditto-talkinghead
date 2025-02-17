@@ -1,0 +1,33 @@
+[project]
+name = "ditto-talkinghead"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "torchaudio",
+    "torchvision",
+    "tensorrt-libs>=8.6.1,<9.0.0",
+    "librosa",
+    "tqdm",
+    "filetype",
+    "imageio",
+    "opencv-python-headless",
+    "scikit-image",
+    "cython",
+    "cuda-python",
+    "imageio-ffmpeg",
+    "colored",
+    "polygraphy",
+    "numpy==2.0.1",
+    "tensorrt>=10.8.0.43",
+    "tensorrt-bindings>=8.6.1",
+]
+
+[tool.uv.sources]
+tensorrt-libs = { index = "tensorrt-libs" }
+
+[[tool.uv.index]]
+name = "tensorrt-libs"
+url = "https://pypi.nvidia.com"

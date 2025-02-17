@@ -17,6 +17,7 @@ checkpoints
 .vscode
 .DS_Store
 *.DS_Store
+.venv/
 
 *.swp
 tmp*
